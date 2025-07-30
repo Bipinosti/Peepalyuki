@@ -23,7 +23,7 @@ p
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url(Peepal yuki special.PNG);
+	background: url(img/bg1.jpg);
 	background-size: cover;
 }
 
@@ -261,7 +261,7 @@ section
 
 .testimonials
 {
-	background: url(img/OIP.jpg);
+	background: url(img/bg2.jpg);
 	background-size: cover;
 }
 
