@@ -15,6 +15,11 @@ p
 	color: #111;
 }
 
+li {
+  padding-left: 20px;  /* Or use margin-left: 20px; */
+}
+
+
 .banner
 {
 	position: relative;
