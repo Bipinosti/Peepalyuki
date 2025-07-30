@@ -15,10 +15,6 @@ p
 	color: #111;
 }
 
-li {
-  padding-left: 20px;  /* Or use margin-left: 20px; */
-}
-
 
 .banner
 {
@@ -31,6 +27,11 @@ li {
 	background: url(img/bg.jpg);
 	background-size: cover;
 }
+
+ul {
+  padding-left: 20px;  /* Or use margin-left: 20px; */
+}
+
 
 .banner .content
 {
