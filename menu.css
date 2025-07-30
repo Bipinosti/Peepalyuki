@@ -1,0 +1,146 @@
+/* Base Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9f0;
+  color: #333;
+}
+
+.menu-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Title */
+.menu-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.menu-title .sparkle {
+  font-size: 1.8rem;
+  color: #f39c12;
+}
+
+.menu-title .flag {
+  font-size: 1.8rem;
+}
+
+.menu-title .highlight {
+  color: #27ae60;
+}
+
+/* Section Header */
+.menu-section h3 {
+  font-size: 1.5rem;
+  color: #d35400;
+  border-bottom: 2px solid #f5cba7;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: #fdf2e9;
+}
+
+td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Back Link */
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* Language Toggle Buttons */
+.language-toggle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.language-toggle button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 0 8px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-toggle button:hover {
+  background-color: #d35400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .menu-title {
+    font-size: 1.8rem;
+  }
+
+  .menu-section h3 {
+    font-size: 1.3rem;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .language-toggle button {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 1.5rem;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
+
+  .language-toggle {
+    flex-direction: column;
+  }
+
+  .language-toggle button {
+    margin: 6px 0;
+  }
+}
