@@ -23,6 +23,9 @@ p {
   background: url(img/bg.jpg);
   background-size: cover;
 }
+.lang {
+  display: none;
+}
 .language-switcher {
   text-align: right;
   padding: 10px 20px;
