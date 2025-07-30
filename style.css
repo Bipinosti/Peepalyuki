@@ -23,6 +23,21 @@ p {
   background: url(img/bg.jpg);
   background-size: cover;
 }
+.language-switcher {
+  text-align: right;
+  padding: 10px 20px;
+}
+.language-switcher button {
+  margin-left: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.language-switcher button:hover {
+  background-color: #ddd;
+}
 
 ul {
   padding-left: 20px; /* Or use margin-left: 20px; */
