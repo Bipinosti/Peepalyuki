@@ -2,61 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menu - Peepal Yuki</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #fff9f0;
       color: #333;
+      line-height: 1.6;
     }
     .menu-container {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
+      margin: 50px auto 60px;
+      padding: 30px 25px;
       background-color: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     }
     .menu-title {
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #d35400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .flag-icon {
+      width: 28px;
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
     }
     .menu-section {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
     .menu-section h3 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       color: #d35400;
-      border-bottom: 2px solid #f5cba7;
-      padding-bottom: 5px;
+      border-bottom: 3px solid #f5cba7;
+      padding-bottom: 8px;
+      margin-bottom: 18px;
+      font-weight: 600;
     }
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
+      table-layout: fixed;
     }
     th, td {
-      padding: 12px;
+      padding: 14px 12px;
       text-align: left;
+      font-size: 1rem;
+      word-wrap: break-word;
+    }
+    td:first-child {
+      width: 70%;
+      padding-right: 20px;
+    }
+    td:last-child {
+      width: 30%;
+      text-align: right;
+      white-space: nowrap;
+      font-weight: 600;
+      color: #ff5722;
     }
     tr:nth-child(even) {
       background-color: #fdf2e9;
     }
+    tr:hover {
+      background-color: #fff0e5;
+      transition: background-color 0.3s ease;
+    }
     .back-link {
       display: block;
+      max-width: 200px;
+      margin: 40px auto 0;
+      padding: 12px 0;
+      background-color: #ff5722;
+      color: #fff;
       text-align: center;
-      margin-top: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
+      transition: background-color 0.3s ease;
     }
-    .flag-icon {
-      width: 24px;       /* adjust size as needed */
-      height: auto;
-      vertical-align: middle;
-      margin-left: 6px;  /* spacing between text and flag */
+    .back-link:hover {
+      background-color: #d84315;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .menu-container {
+        margin: 30px 15px 50px;
+        padding: 20px 15px;
+      }
+      .menu-title {
+        font-size: 1.75rem;
+        gap: 6px;
+      }
+      td:first-child {
+        width: 65%;
+        padding-right: 10px;
+      }
+      td:last-child {
+        width: 35%;
+      }
     }
   </style>
 </head>
@@ -66,7 +125,6 @@
       🇯🇵✨ INDO-JAPANESE FUSION MENU ✨
       <img src="images/nepal-flag.png" alt="Nepal Flag" class="flag-icon" />
     </h1>
-
 
     <div class="menu-section">
       <h3>🍛 Main Fusion Dishes</h3>
