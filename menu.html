@@ -4,230 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menu - Peepal Yuki</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Base styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff9f0;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Container for menu */
-    .menu-container {
-      max-width: 900px;
-      margin: 50px auto 60px;
-      padding: 30px 25px;
-      background-color: #ffffff;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    }
-
-    /* Menu Title */
-    .menu-title {
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: 800;
-      font-family: 'Poppins', sans-serif;
-      color: #d35400; /* warm orange */
-      letter-spacing: 3px;
-      margin-bottom: 40px;
-      text-transform: uppercase;
-      user-select: none;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    /* Flags inside title */
-    .menu-title .flag {
-      font-size: 3rem;
-      margin: 0 10px;
-      display: inline-block;
-      vertical-align: middle;
-      transition: transform 0.3s ease;
-      cursor: default;
-    }
-    .menu-title .flag:hover {
-      transform: scale(1.2) rotate(10deg);
-    }
-
-    /* Sparkle effect */
-    .menu-title .sparkle {
-      color: #ffb347;
-      font-size: 2.8rem;
-      margin: 0 6px;
-      animation: sparkleAnim 2s infinite alternate ease-in-out;
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    @keyframes sparkleAnim {
-      0% {
-        opacity: 1;
-        text-shadow: 0 0 6px #ffb347, 0 0 12px #ffb347;
-      }
-      100% {
-        opacity: 0.7;
-        text-shadow: 0 0 12px #ff6f00, 0 0 24px #ff6f00;
-      }
-    }
-
-    /* Highlight in menu text */
-    .menu-title .highlight {
-      color: #ff0157; /* bright pink/red */
-      letter-spacing: 5px;
-    }
-
-    /* Menu sections */
-    .menu-section {
-      margin-bottom: 35px;
-    }
-
-    .menu-section h3 {
-      font-size: 1.6rem;
-      color: #d35400;
-      border-bottom: 3px solid #f5cba7;
-      padding-bottom: 8px;
-      margin-bottom: 18px;
-      font-weight: 600;
-    }
-
-    /* Tables */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-      table-layout: fixed;
-    }
-
-    th, td {
-      padding: 14px 12px;
-      text-align: left;
-      font-size: 1rem;
-      word-wrap: break-word;
-    }
-
-    /* Adjust widths for table cells */
-    td:first-child {
-      width: 70%;
-      padding-right: 20px;
-    }
-
-    td:last-child {
-      width: 30%;
-      text-align: right;
-      white-space: nowrap;
-      font-weight: 600;
-      color: #ff5722;
-    }
-
-    /* Row styling */
-    tr:nth-child(even) {
-      background-color: #fdf2e9;
-    }
-    tr:hover {
-      background-color: #fff0e5;
-      transition: background-color 0.3s ease;
-    }
-
-    /* Back link button */
-    .back-link {
-      display: block;
-      max-width: 200px;
-      margin: 40px auto 0;
-      padding: 12px 0;
-      background-color: #ff5722;
-      color: #fff;
-      text-align: center;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(255, 87, 34, 0.3);
-      transition: background-color 0.3s ease;
-    }
-    .back-link:hover {
-      background-color: #d84315;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .menu-container {
-        margin: 30px 15px 50px;
-        padding: 20px 15px;
-      }
-      .menu-title {
-        font-size: 1.75rem;
-        gap: 6px;
-      }
-      td:first-child {
-        width: 65%;
-        padding-right: 10px;
-      }
-      td:last-child {
-        width: 35%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="menu.css" />
 </head>
 <body>
+  <div class="language-toggle">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('jp')">日本語</button>
+  </div>
+
   <div class="menu-container">
     <h1 class="menu-title">
       <span class="flag">🇯🇵</span>
       <span class="sparkle">✨</span>
       <span class="menu-text">PEEPAL <span class="highlight">YUKI</span> MENU</span>
       <span class="sparkle">✨</span>
-      <span class="flag">🇳🇵</span>
+      <span class="flag">🇯🇵</span>
     </h1>
 
+    <!-- Main Dishes -->
     <div class="menu-section">
-      <h3>🍛 Main Fusion Dishes</h3>
+      <h3 data-en="🍛 Main Fusion Dishes" data-jp="🍛 メイン料理">🍛 Main Fusion Dishes</h3>
       <table>
-        <tr><td>Curry Rice Don (カレーライス丼)</td><td>¥850</td></tr>
-        <tr><td>Butter Chicken Udon (バターチキンうどん)</td><td>¥950</td></tr>
-        <tr><td>Tandoori Chicken Burger</td><td>¥780</td></tr>
-        <tr><td>Masala Onigiri (スパイスおにぎり)</td><td>¥300</td></tr>
-        <tr><td>Naan Tacos (2 pcs)</td><td>¥680</td></tr>
-        <tr><td>Samosa Tempura (2 pcs)</td><td>¥420</td></tr>
-        <tr><td>Katsu Curry Masala</td><td>¥980</td></tr>
+        <tr><td data-en="Curry Rice Don" data-jp="カレーライス丼">Curry Rice Don</td><td>¥850</td></tr>
+        <tr><td data-en="Butter Chicken Udon" data-jp="バターチキンうどん">Butter Chicken Udon</td><td>¥950</td></tr>
+        <tr><td data-en="Tandoori Chicken Burger" data-jp="タンドリーチキンバーガー">Tandoori Chicken Burger</td><td>¥780</td></tr>
+        <tr><td data-en="Masala Onigiri" data-jp="スパイスおにぎり">Masala Onigiri</td><td>¥300</td></tr>
+        <tr><td data-en="Naan Tacos (2 pcs)" data-jp="ナンタコス (2個)">Naan Tacos (2 pcs)</td><td>¥680</td></tr>
+        <tr><td data-en="Samosa Tempura (2 pcs)" data-jp="サモサ天ぷら (2個)">Samosa Tempura (2 pcs)</td><td>¥420</td></tr>
+        <tr><td data-en="Katsu Curry Masala" data-jp="カツカレーマサラ">Katsu Curry Masala</td><td>¥980</td></tr>
       </table>
     </div>
 
+    <!-- Sides -->
     <div class="menu-section">
-      <h3>🍟 Sides & Snacks</h3>
+      <h3 data-en="🍟 Sides & Snacks" data-jp="🍟 サイド＆スナック">🍟 Sides & Snacks</h3>
       <table>
-        <tr><td>Masala Fries</td><td>¥380</td></tr>
-        <tr><td>Aloo Tikki Sliders (2)</td><td>¥580</td></tr>
-        <tr><td>Paneer Karaage</td><td>¥620</td></tr>
+        <tr><td data-en="Masala Fries" data-jp="マサラフライ">Masala Fries</td><td>¥380</td></tr>
+        <tr><td data-en="Aloo Tikki Sliders (2)" data-jp="アルーティッキースライダー (2個)">Aloo Tikki Sliders (2)</td><td>¥580</td></tr>
+        <tr><td data-en="Paneer Karaage" data-jp="パニール唐揚げ">Paneer Karaage</td><td>¥620</td></tr>
       </table>
     </div>
 
+    <!-- Drinks -->
     <div class="menu-section">
-      <h3>🥤 Drinks</h3>
+      <h3 data-en="🥤 Drinks" data-jp="🥤 飲み物">🥤 Drinks</h3>
       <table>
-        <tr><td>Mango Lassi</td><td>¥450</td></tr>
-        <tr><td>Masala Chai (Hot/Iced)</td><td>¥380</td></tr>
-        <tr><td>Chili Lemon Soda</td><td>¥390</td></tr>
-        <tr><td>Sakura Lassi (Seasonal)</td><td>¥480</td></tr>
+        <tr><td data-en="Mango Lassi" data-jp="マンゴーラッシー">Mango Lassi</td><td>¥450</td></tr>
+        <tr><td data-en="Masala Chai (Hot/Iced)" data-jp="マサラチャイ (ホット/アイス)">Masala Chai (Hot/Iced)</td><td>¥380</td></tr>
+        <tr><td data-en="Chili Lemon Soda" data-jp="チリレモンソーダ">Chili Lemon Soda</td><td>¥390</td></tr>
+        <tr><td data-en="Sakura Lassi (Seasonal)" data-jp="さくらラッシー (季節限定)">Sakura Lassi (Seasonal)</td><td>¥480</td></tr>
       </table>
     </div>
 
+    <!-- Desserts -->
     <div class="menu-section">
-      <h3>🍰 Desserts</h3>
+      <h3 data-en="🍰 Desserts" data-jp="🍰 デザート">🍰 Desserts</h3>
       <table>
-        <tr><td>Chai Pudding</td><td>¥420</td></tr>
-        <tr><td>Gulab Jamun Cheesecake</td><td>¥520</td></tr>
-        <tr><td>Mango Mochi Kulfi</td><td>¥500</td></tr>
+        <tr><td data-en="Chai Pudding" data-jp="チャイプリン">Chai Pudding</td><td>¥420</td></tr>
+        <tr><td data-en="Gulab Jamun Cheesecake" data-jp="グラブジャムンチーズケーキ">Gulab Jamun Cheesecake</td><td>¥520</td></tr>
+        <tr><td data-en="Mango Mochi Kulfi" data-jp="マンゴー餅クルフィ">Mango Mochi Kulfi</td><td>¥500</td></tr>
       </table>
     </div>
 
     <a href="index.html" class="back-link">⬅ Back to Home</a>
   </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerText = el.dataset[lang];
+      });
+    }
+  </script>
 </body>
 </html>
