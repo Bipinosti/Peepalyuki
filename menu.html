@@ -98,6 +98,61 @@
     .back-link:hover {
       background-color: #d84315;
     }
+    .menu-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  color: #d35400; /* warm orange */
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.menu-title .flag {
+  font-size: 3rem;
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.menu-title .flag:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.menu-title .sparkle {
+  color: #ffb347;
+  font-size: 2.8rem;
+  margin: 0 6px;
+  animation: sparkleAnim 2s infinite alternate ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-title .menu-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-title .highlight {
+  color: #ff0157; /* bright pink/red highlight */
+  letter-spacing: 5px;
+}
+
+@keyframes sparkleAnim {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 6px #ffb347, 0 0 12px #ffb347;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0 0 12px #ff6f00, 0 0 24px #ff6f00;
+  }
+}
+
 
     /* Responsive */
     @media (max-width: 600px) {
@@ -122,10 +177,12 @@
 <body>
   <div class="menu-container">
     <h1 class="menu-title">
-      🇯🇵✨ INDO-JAPANESE FUSION MENU ✨
-      <img src="images/nepal-flag.png" alt="Nepal Flag" class="flag-icon" />
+      <span class="flag">🇯🇵</span>
+      <span class="sparkle">✨</span>
+      <span class="menu-text">PEEPAL <span class="highlight">YUKI</span> MENU</span>
+      <span class="sparkle">✨</span>
+      <span class="flag">🇳🇵</span>
     </h1>
-
     <div class="menu-section">
       <h3>🍛 Main Fusion Dishes</h3>
       <table>
