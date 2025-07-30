@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Peepal Yuki Website</title>
+  <title>Peepal Yuki</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,261 +12,115 @@
     <div class="menuToggle" onclick="toggleMenu()"></div>
     <nav>
       <ul class="navigation">
-        <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
-        <li><a href="#expert" onclick="toggleMenu()">Expert</a></li>
-        <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#banner" onclick="toggleMenu()">Home ホーム</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About アバウト</a></li>
+        <li><a href="#menu" onclick="toggleMenu()">Menu メニュー</a></li>
+        <li><a href="#expert" onclick="toggleMenu()">Expert シェフ紹介</a></li>
+        <li><a href="#testimonials" onclick="toggleMenu()">Testimonials お客様の声</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="banner" id="banner">
     <div class="content">
-      <h2>Choose Good. Eat Great.</h2>
-      <h2>良いものを選び、素晴らしい味を楽しむ。</h2>
-      <p>
-        Where Tradition Meets Taste – Crafted with Love, Served with Soul.<br />
-        伝統が味と出会う場所 —— 愛を込めて作り、心を込めて提供します。
-      </p>
-      <a href="#menu" class="btn">Our Menu</a>
+      <h2>Choose Good. Eat Great. <br />良いものを選び、素晴らしい味を楽しむ。</h2>
+      <p>Where Tradition Meets Taste – Crafted with Love, Served with Soul.<br />
+        伝統が味と出会う場所 —— 愛を込めて作り、心を込めて提供します。</p>
+      <a href="#menu" class="btn">Our Menu / メニューを見る</a>
     </div>
   </section>
 
   <section class="about" id="about">
     <div class="row">
-      <article class="col50">
-        <h2 class="titleText"><span>A</span>bout Us</h2>
-        <p><strong>Welcome to Peepal Yuki</strong>, where the flavors of Nepal meet the soul of Japan in a delightful fast-food experience. Born from a passion for traditional taste and modern convenience, we bring together the best of both worlds—authentic Nepali spices and hearty Japanese comfort.</p>
-
-        <p>Our name reflects our roots:</p>
-        <ul>
-          <li><strong>"Peepal"</strong> symbolizes the sacred tree of wisdom and life in Nepali culture.</li>
-          <li><strong>"Yuki"</strong> (雪) means “snow” in Japanese, representing purity, freshness, and harmony.</li>
-        </ul>
-
-        <p>At Peepal Yuki, food is more than just a meal—it's a story. Our carefully crafted fusion menu celebrates street food culture, comfort bowls, and home-style recipes, all prepared with fresh ingredients, warm hospitality, and a dash of creativity.</p>
-
-        <p>We’re proud to be a neighborhood favorite for locals and visitors seeking something unique yet familiar. Whether you're grabbing a quick Momo Don, craving butter chicken ramen, or exploring our seasonal fusion specials, every dish tells a tale of tradition, culture, and community.</p>
-
-        <p>Join us and experience the flavor of <strong>Traditional & Cultural Fusion</strong>—fast, fresh, and unforgettable.</p>
-      </article>
-
-      <aside class="col50">
-        <div class="imgBx">
-          <img src="Peepal yuki special.PNG" alt="Peepal Yuki Special Dish" />
-        </div>
-      </aside>
+      <div class="col50">
+        <h2 class="titleText">About Us / 私たちについて</h2>
+        <p><strong>Welcome to Peepal Yuki</strong>, where the flavors of Nepal meet the soul of Japan — tradition, culture, and community.<br />
+        <strong>Peepal Yuki</strong>へようこそ。ネパールの味わいと日本の魂が出会う場所 — 伝統、文化、そしてコミュニティの融合です。</p>
+      </div>
+      <div class="col50 imgBx">
+        <img src="img/Peepal_yuki_special.png" alt="Special Dish" />
+      </div>
     </div>
   </section>
 
   <section class="menu" id="menu">
-    <div class="title">
-      <h2 class="titleText">Our <span>M</span>enu</h2>
-      <p>
-        Explore a delightful fusion of Nepali soul and Japanese precision. From handcrafted momos to flavorful rice bowls, every dish is made fresh, with love and tradition.<br />
-        ネパールの心と日本の繊細さが織りなす、魅力的な味の融合をお楽しみください。<br />
-        手作りのモモや風味豊かなライスボウルなど、すべての料理を愛情と伝統を込めて丁寧にお作りしています。
-      </p>
-    </div>
-
-    <div class="content">
-      <!-- Example menu items - Consider adding alt text specific to dishes -->
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/menu1.jpg" alt="Special Salads" />
-        </div>
-        <div class="text">
-          <h3>Special Salads</h3>
-        </div>
+    <h2 class="titleText">Our Menu / メニュー</h2>
+    <div class="menu-container">
+      <div class="menu-section">
+        <h3>Momo Special / モモスペシャル</h3>
+        <table>
+          <tr><th>Dish / 料理</th><th>Price / 価格</th></tr>
+          <tr><td>Steamed Momos / 蒸しモモ</td><td>¥800</td></tr>
+          <tr><td>Fried Momos / 揚げモモ</td><td>¥850</td></tr>
+        </table>
       </div>
-
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/menu2.jpg" alt="Special Soup" />
-        </div>
-        <div class="text">
-          <h3>Special Soup</h3>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/menu3.jpg" alt="Special Pasta" />
-        </div>
-        <div class="text">
-          <h3>Special Pasta</h3>
-        </div>
-      </div>
-      
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/OIP.jpg" alt="Special Momo" />
-        </div>
-        <div class="text">
-          <h3>Special Momo</h3>
-        </div>
-      </div>
-
-      <!-- Add more menu items as needed -->
-    </div>
-
-    <div class="title">
-      <a href="#" class="btn">View All</a>
     </div>
   </section>
 
   <section class="expert" id="expert">
-    <div class="title">
-      <h2 class="titleText">Our Kitchen <span>E</span>xpert</h2>
-      <p>
-        Our chef blends tradition and creativity to craft every dish with passion and precision.<br />
-        シェフは伝統と創造性を融合させ、情熱と技で一皿一皿を仕上げます
-      </p>
-    </div>
-    <div class="content">
+    <h2 class="titleText">Meet Our Chef / シェフ紹介</h2>
+    <div class="expert content">
       <div class="box">
         <div class="imgBx">
-          <img src="img/expert1.jpg" alt="Chef Daya Ram Bhandari" />
+          <img src="img/chef1.jpg" alt="Chef Image" />
         </div>
         <div class="text">
-          <h3>Daya Ram Bhandari</h3>
-        </div>
-      </div>
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/expert2.jpg" alt="Chef Bipin Osti" />
-        </div>
-        <div class="text">
-          <h3>Bipin Osti</h3>
-        </div>
-      </div>
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/expert3.jpg" alt="Chef Biva Osti Bhandari" />
-        </div>
-        <div class="text">
-          <h3>Biva Osti Bhandari</h3>
-        </div>
-      </div>
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/expert4.jpg" alt="Chef Hari Ram" />
-        </div>
-        <div class="text">
-          <h3>Hari Ram</h3>
+          <h3>Chef Satoshi / サトシシェフ</h3>
+          <p>Expert in Indo-Japanese fusion cuisine with 15 years of experience.<br />
+          15年以上の経験を持つインド・日本料理の融合の専門家。</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="testimonials" id="testimonials">
-    <div class="title white">
-      <h2 class="titleText">The <span>S</span>aid About Us</h2>
-      <p>
-        Real words from our happy customers.<br />
-        実際にいただいた感想をご紹介します。
-      </p>
-    </div>
-    <div class="content">
+    <h2 class="titleText white">Testimonials / お客様の声</h2>
+    <div class="testimonials content">
       <div class="box">
         <div class="imgBx">
-          <img src="img/testi1.jpg" alt="Customer Emma Sato" />
+          <img src="img/customer1.jpg" alt="Customer" />
         </div>
         <div class="text">
-          <p>
-            The flavors were incredible! You can taste the love in every bite. Highly recommend this place.
-          </p>
-          <h3>Emma Sato</h3>
-        </div>
-      </div>
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/testi2.jpg" alt="Customer Takashi Watanabe" />
-        </div>
-        <div class="text">
-          <p>
-            ネパールの温かさと日本の繊細さが完璧に融合しています。モモライスボウルは忘れられない味でした。
-          </p>
-          <h3>Takashi Watanabe</h3>
-        </div>
-      </div>
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/testi3.jpg" alt="Customer Haruka Tanaka" />
-        </div>
-        <div class="text">
-          <p>
-            とても居心地が良く、スタッフも親切でした。料理の一品一品が手作りの祝福のように感じられました。
-          </p>
-          <h3>Haruka Tanaka</h3>
+          <p>"Amazing fusion flavors, truly unique experience!"<br />
+            「驚くべき融合の味、本当にユニークな体験！」</p>
+          <h3>Emma / エマ</h3>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="contact-section-wrapper">
-  <!-- Contact Form -->
   <section class="contact" id="contact">
-    <div class="title">
-      <h2 class="titleText"><span>C</span>ontact Us</h2>
-      <p>We’d love to hear from you! Whether you have a question, feedback, or just want to say hello—drop us a message anytime.</p>
-      <p>お気軽にお問い合わせください！ご質問、ご意見、またはご挨拶でも、いつでもメッセージをお待ちしています。</p>
-    </div>
-    <div class="contactForm">
-      <h3>Send Message</h3>
-      <div class="inputBox">
-        <input type="text" placeholder="Name" required>
+    <h2 class="titleText">Contact Us / お問い合わせ</h2>
+    <div class="contact-section-wrapper">
+      <div class="contact">
+        <form class="contactForm">
+          <h3>Send a Message / メッセージを送る</h3>
+          <div class="inputBox"><input type="text" name="name" required placeholder="Name / 名前" /></div>
+          <div class="inputBox"><input type="email" name="email" required placeholder="Email / メール" /></div>
+          <div class="inputBox"><textarea name="message" required placeholder="Message / メッセージ" rows="5"></textarea></div>
+          <div class="inputBox"><input type="submit" value="Send / 送信" /></div>
+        </form>
       </div>
-      <div class="inputBox">
-        <input type="email" placeholder="Email" required>
-      </div>
-      <div class="inputBox">
-        <textarea placeholder="Message line..." required></textarea>
-      </div>
-      <div class="inputBox">
-        <input type="submit" value="Send">
+
+      <div class="location-box">
+        <h2>Our Location / 店舗の場所</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019941738203!2d144.96305821550437!3d-37.81410777975106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43e1fd1e69%3A0xf6e4b5f0a5b676fc!2sFederation%20Square!5e0!3m2!1sen!2sjp!4v1591954905637!5m2!1sen!2sjp"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Map"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Location Box -->
-  <div class="location-box">
-    <h2>📍 Our Location</h2>
-    <p>Peepal Yuki</p>
-    <p>1-chōme-10-4 Sugita, Isogo Ward,</p>
-    <p>Yokohama, Kanagawa 235-0033, Japan</p>
-    <p>Open: 07:00 AM – 9:00 PM</p>
-    <p>Phone: 090-1234-5678</p>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.944590952374!2d139.61684507578633!3d35.38726904460795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184a6fdb392de5%3A0x1c376c42e2584ac1!2s1-ch%C5%8Dme-10-4%20Sugita%2C%20Isogo%20Ward%2C%20Yokohama%2C%20Kanagawa%20235-0033%2C%20Japan!5e0!3m2!1sen!2sjp!4v1722298189275!5m2!1sen!2sjp"
-        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
-</div>
-
-
-  <footer class="copyrightText">
-    <p>
-      &copy; 2025 <a href="#">Bipin Osti</a>. All Rights Reserved.
-    </p>
-  </footer>
-
-  <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-      const header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-    });
-
+  <script>
     function toggleMenu() {
-      const menuToggle = document.querySelector(".menuToggle");
-      const navigation = document.querySelector(".navigation");
-      menuToggle.classList.toggle("active");
-      navigation.classList.toggle("active");
+      document.querySelector('.menuToggle').classList.toggle('active');
+      document.querySelector('.navigation').classList.toggle('active');
     }
   </script>
 </body>
